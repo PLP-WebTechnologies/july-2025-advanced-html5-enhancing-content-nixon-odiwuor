@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 Enhanced Content & Forms</title>
+  <meta name="description" content="A demo of HTML5 content elements and advanced form building with validation.">
+</head>
+<body>
+
+  <!-- Page Header -->
+  <header>
+    <h1>HTML5 Enhanced Content & Forms</h1>
+    <p>Demonstrating lists, tables, media, and a structured HTML5 form with validation.</p>
+  </header>
+
+  <main>
+    <!-- Lists Section -->
+    <section>
+      <h2>Chemrock Technology</h2>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Accessibility Standards (WCAG)</li>
+      </ul>
+
+      <h3>Steps to Build a Simple Website</h3>
+      <ol>
+        <li>Plan your structure and content.</li>
+        <li>Write semantic HTML5 code.</li>
+        <li>Add styling with CSS.</li>
+        <li>Enhance interactions with JavaScript.</li>
+      </ol>
+    </section>
+
+    <!-- Tables Section -->
+    <section>
+      <h2>Web Development Courses</h2>
+      <table border="1">
+        <caption>Course Offerings</caption>
+        <thead>
+          <tr>
+            <th>Course</th>
+            <th>Duration</th>
+            <th>Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML & Accessibility</td>
+            <td>4 Weeks</td>
+            <td>Beginner</td>
+          </tr>
+          <tr>
+            <td>CSS for Layouts</td>
+            <td>6 Weeks</td>
+            <td>Intermediate</td>
+          </tr>
+          <tr>
+            <td>JavaScript Essentials</td>
+            <td>8 Weeks</td>
+            <td>Intermediate</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Media Section -->
+    <section>
+      <h2>Media Showcase</h2>
+      <figure>
+        <img src="img 1.jpg" alt="Illustration of web design on a laptop" width="400">
+        <figcaption>Responsive Web Design</figcaption>
+      </figure>
+
+      <audio controls>
+        <source src="audio 1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <video controls width="400">
+        <source src="video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+      <h2>Registration Form</h2>
+      <form action="#" method="post" autocomplete="on">
+        
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="John Doe"><br><br>
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required placeholder="example@mail.com"><br><br>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Details</legend>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required minlength="5"><br><br>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required minlength="8"><br><br>
+
+          <label for="confirm-password">Confirm Password:</label>
+          <input type="password" id="confirm-password" name="confirm-password" required minlength="8"><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+          <p>Choose your favorite web technology:</p>
+          <label><input type="radio" name="tech" value="html5" required> HTML5</label>
+          <label><input type="radio" name="tech" value="css3"> CSS3</label>
+          <label><input type="radio" name="tech" value="javascript"> JavaScript</label><br><br>
+
+          <label for="course">Select a course:</label>
+          <select id="course" name="course" required>
+            <option value="">--Please choose--</option>
+            <option value="html">HTML & Accessibility</option>
+            <option value="css">CSS for Layouts</option>
+            <option value="js">JavaScript Essentials</option>
+          </select><br><br>
+
+          <label>
+            <input type="checkbox" name="newsletter"> Subscribe to our newsletter
+          </label>
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Web Foundations. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
